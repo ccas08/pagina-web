@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+    
+<head>
+  <title>Mi Terapia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Referencia a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Aquí está el vínculo a tu archivo CSS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ... -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+  <!-- Estilos personalizados -->
+  <style>
+    .navbar-brand img {
+      width: 140px; /* Aumenta este valor para un logo más ancho */
+      height: auto; /* "auto" mantendrá la proporción original de la imagen */
+    }
+
+    .navbar {
+      background-color: #D9B2FF !important;  /* Color de la barra de navegación, en este caso es un azul */
+    }
+
+    .navbar .navbar-nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+    .navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Puedes modificar el valor a tu gusto */
+  transition: transform 0.2s; /* Esta línea suaviza la transición de la transformación. Puedes ajustar la duración */
+}
+
+
+    .content-section {
+      margin: 20px 0;
+    }
+
+    .custom-btn {
+      background-color: #D9B2FF; /* Color de fondo del botón */
+      border-color: #D9B2FF; /* Color del borde del botón */
+      color: #000000; /* Color del texto del botón */
+    }
+
+    /*.img-principal {
+      max-width: 300px;
+      object-fit: cover; /* Asegura que la imagen cubra todo el espacio definido, cortándola si es necesario */
+      /*margin-top: 30%;
+    }*/
+    
+
+    .custom-btn:hover {
+      background-color: #C8A2C8; /* Color de fondo del botón al pasar el cursor por encima */
+      border-color: #C8A2C8; /* Color del borde del botón al pasar el cursor por encima */
+    }
+   
+    #sobre-mi h4 {
+    border-bottom: 1px solid rgb(203, 197, 197); /* Añade un borde en la parte inferior del título */
+    padding-bottom: 5px; /* Añade un poco de relleno en la parte inferior para separar el texto del borde */
+  }
+
+  .img-principal {
+    max-width: 500px;
+    object-fit: cover; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    
+  }
+  .img-principal:active {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+
+.img-principal:hover {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+
+
+
+
+    .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-lg-none d-flex">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia">
+      </a>
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="#inicio">
+      <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia" style="margin-left: 20px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 60%;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link nunito" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link nunito" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="sobre-mi.html">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="main-content">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <section id="sobre-mi" class="content-section text-center">
+        <h4 class="display-custom-titulo nunito">Servicios </h4>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 pb-md-5">
+                <div class="card">
+                    <img src="servicios/uno.png" alt="Una descripción de la imagen" class="card-img-top mx-auto d-block img-principal">
+                    <div class="card-body">
+                        <h4 class="display-custom nunito">Terapia integrativa 1:1</h4>
+                        <p class="card-text nunito text-left" style="padding: 20px;">La sesión 1:1 está dirigida a evaluar y orientar a cada persona según su motivo de consulta desde un abordaje de coaching holístico, para facilitar una mayor comprensión sobre los mensajes a considerar, como de aquellas herramientas a integrar en su cotidianeidad para encauzar la energía hacia el más alto bienestar.
+                          La modalidad puede ser presencial u online, y tiene una duración de 60 minutos.
+                          </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 pb-md-5">
+              <div class="card">
+                <img src="servicios/uno.png" alt="Una descripción de la imagen" class="card-img-top mx-auto d-block img-principal">
+                <div class="card-body">
+                    <h4 class="display-custom nunito">Terapia integrativa 1:1</h4>
+                    <p class="card-text nunito text-left" style="padding: 20px;">La sesión 1:1 está dirigida a evaluar y orientar a cada persona según su motivo de consulta desde un abordaje de coaching holístico, para facilitar una mayor comprensión sobre los mensajes a considerar, como de aquellas herramientas a integrar en su cotidianeidad para encauzar la energía hacia el más alto bienestar.
+                      La modalidad puede ser presencial u online, y tiene una duración de 60 minutos.
+                      </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 pb-md-5">
+              <div class="card">
+                <img src="servicios/uno.png" alt="Una descripción de la imagen" class="card-img-top mx-auto d-block img-principal">
+                <div class="card-body">
+                    <h4 class="display-custom nunito">Terapia integrativa 1:1</h4>
+                    <p class="card-text nunito text-left" style="padding: 20px;">La sesión 1:1 está dirigida a evaluar y orientar a cada persona según su motivo de consulta desde un abordaje de coaching holístico, para facilitar una mayor comprensión sobre los mensajes a considerar, como de aquellas herramientas a integrar en su cotidianeidad para encauzar la energía hacia el más alto bienestar.
+                      La modalidad puede ser presencial u online, y tiene una duración de 60 minutos.
+                      </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-12 pb-md-5">
+              <div class="card">
+                <img src="servicios/uno.png" alt="Una descripción de la imagen" class="card-img-top mx-auto d-block img-principal">
+                <div class="card-body">
+                    <h4 class="display-custom nunito">Terapia integrativa 1:1</h4>
+                    <p class="card-text nunito text-left" style="padding: 20px;">La sesión 1:1 está dirigida a evaluar y orientar a cada persona según su motivo de consulta desde un abordaje de coaching holístico, para facilitar una mayor comprensión sobre los mensajes a considerar, como de aquellas herramientas a integrar en su cotidianeidad para encauzar la energía hacia el más alto bienestar.
+                      La modalidad puede ser presencial u online, y tiene una duración de 60 minutos.
+                      </p>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row" style="justify-content: center; margin-left: 7%;">
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+          </a>
+      </div>
+  
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="https://twitter.com/tu_nombre_de_usuario/" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+          </a>
+      </div>
+  
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="tel:your-phone-number" target="_blank">
+              <i class="fas fa-phone fa-2x"></i>
+          </a>
+      </div>
+  </div>
+  
+  
+  </div>
+  <div class="footer-bottom">
+      <p class="nunito">&copy; 2023 Cathy Alarcón. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  
+  
+    
+
+  <!-- <footer class="footer bg-dark text-white p-3 text-center">
+    <p>&copy; 2023 Mi Terapia</p>
+  </footer> -->
+
+  <!-- Referencias a jQuery y Bootstrap JS -->
+  
+<!-- ... el contenido de tu inicio ... -->
+ 
+
+<script>
+
+  $(document).ready(function () {
+    $('.navbar-nav li a').click(function(e) {
+      var href = $(this).attr('href');
+      if (!href.startsWith('#')) {
+        // Si el enlace no comienza con '#', permitir la acción predeterminada
+        return;
+      }
+      $('.navbar-nav li.active').removeClass('active');
+      var $parent = $(this).parent();
+      $parent.addClass('active');
+      e.preventDefault();
+    });
+  });
+
+
+  </script>
+  
+</body>
+
+</html>

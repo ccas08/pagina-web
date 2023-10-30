@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+    
+<head>
+  <title style="font-family: 'Nunito', sans-serif">Mi Terapia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Referencia a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Aquí está el vínculo a tu archivo CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+  <!-- Estilos personalizados -->
+  <style>
+    .navbar-brand img {
+      width: 140px; /* Aumenta este valor para un logo más ancho */
+      height: auto; /* "auto" mantendrá la proporción original de la imagen */
+    }
+
+    .navbar {
+      background-color: #D9B2FF !important;  /* Color de la barra de navegación, en este caso es un azul */
+    }
+
+    .navbar .navbar-nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+    .navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Puedes modificar el valor a tu gusto */
+  transition: transform 0.2s; /* Esta línea suaviza la transición de la transformación. Puedes ajustar la duración */
+}
+
+
+    .content-section {
+      margin: 20px 0;
+    }
+
+    .custom-btn {
+      background-color: #D9B2FF; /* Color de fondo del botón */
+      border-color: #D9B2FF; /* Color del borde del botón */
+      color: #000000; /* Color del texto del botón */
+    }
+
+    .custom-btn:hover {
+      background-color: #C8A2C8; /* Color de fondo del botón al pasar el cursor por encima */
+      border-color: #C8A2C8; /* Color del borde del botón al pasar el cursor por encima */
+    }
+    .mini-img {
+      width: 200px;  /* Define el ancho de la imagen */
+      height: 200px; /* Define la altura de la imagen */
+      object-fit: cover; /* Asegura que la imagen cubra todo el espacio definido, cortándola si es necesario */
+    }
+    .img-principal {
+      max-width: 300px;
+      height: 500px;
+      object-fit: cover; /* Asegura que la imagen cubra todo el espacio definido, cortándola si es necesario */
+      margin-top: 10%;
+    }
+
+    .img-principal2 {
+      max-width: 400px;
+      height: 400px;
+      object-fit: cover; /* Asegura que la imagen cubra todo el espacio definido, cortándola si es necesario */
+      margin-top: 10%;
+    }
+
+    .mini-img:hover {
+  transform: scale(1.1);
+  transition: transform .2s; /* Animación suave */
+}
+
+
+    @media (max-width: 768px) {
+      .img-principal {
+        max-width: 100%; /* En pantallas pequeñas, ajusta el ancho de la imagen a 100% */
+        margin-top: 10%;
+      }
+    }
+
+    .mini-img:active {
+  transform: scale(1.1);
+  transition: transform .2s; /* Animación suave */
+}
+
+    .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-lg-none d-flex">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia">
+      </a>
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="#inicio">
+      <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia" style="margin-left: 20px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 60%;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link nunito" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="sobre-mi.html">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <br>
+
+  <div class="row align-items-center" style="
+  background: linear-gradient(rgba(255, 255, 255, 0.778), rgba(255, 255, 255, 0.8)), 
+  url('fondo1.jpg');
+  background-size: cover;
+  background-position: center;">
+  <div class="col-sm-3 offset-sm-2">
+    <section id="sobre-mi" class="content-section">
+      <h3 class="nunito-bold">¡Hola! Bienvenid@s a mi página, soy Cathy Alarcón</h3>
+      </br>
+      <h5 class="nunito">Los invito a conocer mi historia y mis servicios</h5>
+      </br>
+      <button class="btn custom-btn nunito"><i class="fas fa-book"></i> Mi historia </button>
+
+      <button style="margin-left: 10px;" class="btn custom-btn nunito">
+        <i class="fas fa-user"></i> Contacto 
+      </button>
+    </section>
+  </div>
+  <div class="col-sm-2">
+    <img style="margin-bottom: 20px;" src="uno.png" alt="Una descripción de la imagen" class="img-principal">
+    
+  </div>
+</div>
+
+<br>
+  <br>
+  <br>
+  <br>
+
+<div class="row align-items-center" >
+  <div class="col-sm-6 offset-sm-2">
+       
+      <h5 style="word-wrap: break-word;max-width:100% ;"class="dancingScript"> “Siempre he creído que el potencial del ser humano es ilimitado. 
+        Somos una maravillosa ingeniería que requiere cuidado y dedicación integral para comenzar a liberar aquellas interferencias que no nos dejan avanzar”
+        </h5>
+      </br>
+      
+    
+  </div>
+  
+  
+</div>
+  
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="row align-items-center" style="
+  background: linear-gradient(rgba(237, 230, 237, 0.647), rgba(230, 225, 230, 0.74)), 
+  url('quiensoy2.png');
+  background-size: cover;
+  background-position: center;">
+  <div class="col-sm-3 offset-sm-2" style="margin-right: 5%;">
+    <section id="sobre-mi" class="content-section">
+      <h3 class="nunito-bold">¿ Quien soy ?</h3>
+      </br>
+      <h6 class="nunito" >
+        Mi nombre es Catherine Alarcón Córdova, soy Chilena. Nacida y criada en un entorno de naturaleza privilegiado en plena cordillera. Actualmente viviendo en Concón (V°Región). <br>
+        
+        Soy terapeuta ocupacional con un enfoque integrativo en el abordaje y coach holística, me desempeño de forma independiente y mi mayor propósito ha sido adquirir herramientas para el bienestar integral y desarrollar estrategias que me permitan apoyar/guiar/acompañar  a otros en este camino de sanación, autoconocimiento, crecimiento personal y espiritual. 
+        
+        </h6>
+      </br>
+      
+    </section>
+  </div>
+  <div class="col-sm-2">
+    <img style="margin-bottom: 20px;" src="quiensoy.png" alt="Una descripción de la imagen" class="img-principal">
+    
+  </div>
+  
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <div class="row">
+    <div class="col-md-6 offset-md-2">
+      <h3 class="nunito-bold">Servicios</h3>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-2 offset-md-2">
+      <a href="pagina1.html">
+        <img src="inicial2.png" alt="Una descripción de la imagen" class="img-fluid mini-img">
+      </a>
+      <h5 class="nunito-semi-bold" style="margin-top: 15px;">Terapia Integrativa 1:1</h5>
+      <p class="nunito"> descripcion</p>
+    </div>
+    <div class="col-md-2">
+      <a href="pagina2.html">
+        <img src="inicial3.png" alt="Una descripción de la imagen" class="img-fluid mini-img">
+      </a>
+      <h5 class="nunito-semi-bold" style="margin-top: 15px;">Planes Terapéuticos</h5>
+      <p class="nunito"> descripcion</p>
+    </div>
+    <div class="col-md-2">
+      <a href="pagina3.html">
+        <img src="inicial4.png" alt="Una descripción de la imagen" class="img-fluid mini-img">
+      </a>
+      <h5 class="nunito-semi-bold" style="margin-top: 15px;">Formación</h5>
+      <p class="nunito"> descripcion</p>
+    </div>
+    <div class="col-md-2">
+      <a href="pagina4.html">
+        <img src="inicial5.png" alt="Una descripción de la imagen" class="img-fluid mini-img">
+      </a>
+      <h5 class="nunito-semi-bold" style="margin-top: 15px;">Ceremonias</h5>
+      <p class="nunito"> descripcion</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="row align-items-center" >
+  <div class="col-sm-6 offset-sm-2">
+       
+      <h5 style="word-wrap: break-word;max-width:100% ;"class="dancingScript"> Te invito a transitar por un mágico viaje de autoconocimiento para despertar tu  conciencia y acceder a tu propia riqueza interior, aquella fuente de luz que te permite recorrer esta vida terrenal con la mayor integridad y coherencia posible con tu esencia divina-espiritual. 
+        </h5>
+      </br>
+      
+    
+  </div>
+  <div class="col-sm-2">
+    <img style="margin-bottom: 20px;" src="ultima.jpg" alt="Una descripción de la imagen" class="img-principal2">
+    
+  </div>
+  
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row" style="justify-content: center; margin-left: 7%;">
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+          </a>
+      </div>
+  
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="https://twitter.com/tu_nombre_de_usuario/" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+          </a>
+      </div>
+  
+      <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+          <a href="tel:your-phone-number" target="_blank">
+              <i class="fas fa-phone fa-2x"></i>
+          </a>
+      </div>
+  </div>
+  
+  
+  </div>
+  <div class="footer-bottom">
+      <p class="nunito">&copy; 2023 Cathy Alarcón. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  
+
+    
+
+  <!-- <footer class="footer bg-dark text-white p-3 text-center">
+    <p>&copy; 2023 Mi Terapia</p>
+  </footer> -->
+
+  <!-- Referencias a jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- ... el contenido de tu inicio ... -->
+ 
+
+<script>
+  $(document).ready(function () {
+    $('.navbar-nav li a').click(function(e) {
+      var href = $(this).attr('href');
+      if (!href.startsWith('#')) {
+        // Si el enlace no comienza con '#', permitir la acción predeterminada
+        return;
+      }
+      $('.navbar-nav li.active').removeClass('active');
+      var $parent = $(this).parent();
+      $parent.addClass('active');
+      e.preventDefault();
+    });
+  });
+  </script>
+  
+</body>
+
+</html>

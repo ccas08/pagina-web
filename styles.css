@@ -1,0 +1,62 @@
+/* Aquí definimos la clase para la fuente Nunito */
+.nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  /* También puedes definir la clase para una versión en negrita de Nunito, si la has incluido en tu enlace a Google Fonts */
+  .nunito-bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+
+  .nunito-semi-bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+  }
+
+  .display-custom {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-custom-titulo {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main-content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #c3a3db;
+  color: black;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: #b392d1;
+}
+.footer-bottom{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.dancingScript {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+

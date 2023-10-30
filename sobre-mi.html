@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+    
+<head>
+  <title>Mi Terapia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Referencia a Bootstrap CSS -->
+  <!-- Referencia a Bootstrap CSS -->
+<!-- Referencia a Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Aquí está el vínculo a tu archivo CSS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- ... -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <!-- Estilos personalizados -->
+  <style>
+    .navbar-brand img {
+      width: 140px; /* Aumenta este valor para un logo más ancho */
+      height: auto; /* "auto" mantendrá la proporción original de la imagen */
+    }
+
+    .navbar {
+      background-color: #D9B2FF !important;  /* Color de la barra de navegación, en este caso es un azul */
+    }
+
+    .navbar .navbar-nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+    .navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Puedes modificar el valor a tu gusto */
+  transition: transform 0.2s; /* Esta línea suaviza la transición de la transformación. Puedes ajustar la duración */
+}
+
+
+    .content-section {
+      margin: 20px 0;
+    }
+
+    
+    .custom-btn {
+      background-color: #D9B2FF; /* Color de fondo del botón */
+      border-color: #D9B2FF; /* Color del borde del botón */
+      color: #000000; /* Color del texto del botón */
+    }
+
+    /*.img-principal {
+      max-width: 300px;
+      object-fit: cover; /* Asegura que la imagen cubra todo el espacio definido, cortándola si es necesario */
+      /*margin-top: 30%;
+    }*/
+    
+    
+
+    .custom-btn:hover {
+      background-color: #C8A2C8; /* Color de fondo del botón al pasar el cursor por encima */
+      border-color: #C8A2C8; /* Color del borde del botón al pasar el cursor por encima */
+    }
+   
+    #sobre-mi h3 {
+    border-bottom: 1px solid rgb(203, 197, 197); /* Añade un borde en la parte inferior del título */
+    padding-bottom: 10px; /* Añade un poco de relleno en la parte inferior para separar el texto del borde */
+  }
+
+  .img-principal {
+    max-width: 300px;
+    object-fit: cover; 
+    margin-top: 30%;
+    
+  }
+  .img-principal:active {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+
+.img-principal:hover {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+
+
+  .img-principal2 {
+    max-width: 300px;
+    object-fit: cover; 
+    margin-top: 30%;
+   
+  }
+
+  .img-principal2:hover {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+  .img-principal2:active {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+.img-principal3 {
+    max-width: 350px;
+    object-fit: cover; 
+    margin-top: 30%;
+   
+  }
+
+  .img-principal3:hover {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+  .img-principal3:active {
+  transform: scale(1.1);
+  transition: transform .1s; /* Animación suave */
+}
+
+
+    .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-lg-none d-flex">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia">
+      </a>
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="#inicio">
+      <img src="logotipo.png" class="d-inline-block align-top" alt="Logo de Mi Terapia" style="margin-left: 20px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 60%;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link nunito" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link nunito" href="sobre-mi.html">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nunito" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  
+  <div class="row">
+    <div class="col-md-6 offset-md-2">
+      <section id="sobre-mi" class="content-section">
+        <h3 class="display-custom nunito" >Sobre mi </h3>
+        <br>
+
+        <details >
+          <summary style="cursor:pointer; font-size: 20px; " class="nunito">Mi historia</summary>
+          <div style="display: flex; justify-content: space-between;">
+          <p class="nunito" style="padding: 10px;">Mi conexión con el mundo energético-espiritual, se ha transformado en una aventura mágica y a la vez algo caótica de descubrir y de aprender a integrar en esta vida más terrenal. Ya que de muy pequeña comencé a desarrollar la capacidad de recibir mensajes espirituales, podía sentir lo que otros experimentaban, era muy sensible a la energía de las personas, de los espacios, de la naturaleza, de lo no visible. <br><br>
+            Pero al no saber cómo manejar toda esa información, comencé a batallar personalmente con el sistema y conmigo misma, lo que me llevó a recorrer un camino más autodestructivo y de baja autoestima en mi adolescencia. Hasta que decidí hacer un cambio en mi interior y encauzar mi energía con mayor sabiduría, ya que no me servía de nada todo lo que podía ver si no tenía las herramientas suficientes para ayudarme a mí.<br><br>
+            Por ello, a los 16 años comienzo mi viaje de autoconocimiento, autocuidado, crecimiento personal y desarrollo espiritual, nutriéndome con diversas disciplinas derivadas de las terapias complementarias como del área de la salud más tradicional en mi desarrollo profesional. Cada herramienta o conocimiento adquirido lo ponía en práctica, y así fui descubriendo un tremendo mundo en mi interior, comencé a transformar situaciones físicas, emocionales, patrones mentales limitantes y bloqueos energéticos que al ir destrabando y sanando me impulsaron a nuevas etapas, nuevos caminos, nuevas oportunidades, nuevas formas de ser, de reconocerme y de valorarme. <br><br>
+            Siguiendo este llamado, vocación o misión de vida, es que en el año 2016 decido emprender e independizarme, y así tomé varias decisiones difíciles pero en coherencia con la versión de mí que deseaba alcanzar y de cómo quería vivir mi vida. Por lo que me divorcié, renuncié a mi trabajo dependiente, me cambié de ciudad y tuve que volver a la casa de mis padres con mi hija de 3 años hasta volver a rearmarme, rediseñarme y levantarme con más fuerza y claridad para acercarme cada vez más a mi más alto potencial. <br><br>
+            Sin lugar a dudas, esta trayectoria me ha llenado de mayores posibilidades de ayudar a otros en su caminar como de seguir sosteniendo mi luz ante la adversidad. Ya que me permite estar en una mayor sintonía conmigo misma para estar al servicio de la fuente divina y de cada persona que llega a mí en busca de una mejor calidad de vida, momento donde pongo todo mi ser y saber a disposición de un trabajo holístico dirigido al bienestar integral de cada persona. <br><br>
+            </p>
+            <div class="col-sm-2">
+              <img style="margin-bottom: 20px;" src="sobre-mi/inicial1.png" alt="Una descripción de la imagen" class="img-principal">
+              
+            </div>
+          </div>
+        </details>
+        
+        <details>
+          <summary style="cursor:pointer; font-size: 20px;"class="nunito">Mi Enfoque Integrativo</summary>
+          <div style="display: flex; justify-content: space-between;">
+          <p class="nunito" style="padding: 10px;">A lo largo de los 20 años que llevo recorriendo el mundo del crecimiento personal y desarrollo espiritual, me he formado en diversas disciplinas tanto del área de la salud tradicional como de la alternativa o complementaria, ampliando mi percepción a una mirada global del Ser humano para poder facilitar procesos de sanación, orientados a mejorar la calidad de vida y potenciar al máximo las capacidades de toda persona, familia, grupo o empresa que esté en búsqueda de una transformación y bienestar integral. <br><br>
+            Promoviendo con ello, un cambio de paradigma hacia una mirada integrativa de la vida que valora a las personas como un todo; mente, cuerpo y Alma, el Ser humano en todo su esplendor, sin separarlo en partes, ya que cuando queremos trabajar el abordaje de un síntoma por ejemplo, nos damos cuenta cómo éste es solo la manifestación de una situación que generó un impacto emocional que no fue trabajado, lo que conlleva a cerrar algún canal energético, que afecta directamente a los canales orgánicos, disminuyendo el correcto funcionamiento y posteriormente desencadenando en una alteración que no tratada, se transforma luego en una enfermedad con o sin diagnóstico.<br><br>
+            Esto puede ser a su vez una crisis emocional, existencial, laboral, de pareja, enfermedad, duelo, etc. Cualquier situación que lleve a la persona a ver su calidad de vida impactada, a perder su sentido de vida, cuando ya no logra dar valor a su ser, a su potencial, cuando deja de brillar internamente, todas estas situaciones pueden ser las crisis que nos llevan a replantearnos el camino que hemos estado recorriendo y qué coherencia tiene con nuestro corazón, con nuestros anhelos reales para realizar una transformación de nuestro Ser, donde podamos imprimir nuestro sello personal a todo aquello que realizamos, para hacerlo con motivación, con pasión, con voluntad e intención.<br><br>
+            Desde esa mirada es que doy lo mejor de mí para ayudarles a despertar lo mejor de cada uno de ustedes, siempre consciente del proceso de cada uno, de su ritmo, de sus propios tiempos y desde la sintonía con los mensajes que cada uno tiene que descifrar, para su mayor evolución en esta vida.<br><br>
+            </p>
+            <div class="col-sm-2">
+              <img style="margin-bottom: 20px;" src="sobre-mi/dos.png" alt="Una descripción de la imagen" class="img-principal">
+              
+            </div>
+          </div>
+        </details>
+        
+        <details>
+          <summary style="cursor:pointer; font-size: 20px;"class="nunito">Mi Formación</summary>
+          <div style="display: flex; justify-content: space-between;">
+          <section id="sobre-mi" class="content-section">
+            <h3 style="margin-bottom: 20px;">Mi Formación</h3>
+            <li>Terapeuta Ocupacional, Licenciada en Ciencias de la Ocupación. (Universidad Mayor, Santiago, Chile) </li>
+            <li>Curso Sanación Energética Nivel I, II, III, IV, V (Santiago, Chile) </li>
+            <li>Curso de Clarividencia y Clariconciencia (Santiago, Chile) </li>
+            <li>Terapeuta en Biomagnetismo Médico (Santiago de Querétaro, México)  </li>
+            <li>Curso en Concepto Bobath “Reconocimiento y Tratamiento de pacientes adultos con condiciones Neurológicas” (Universidad de Chile, Santiago) </li>
+            <li>Curso de Integración Sensorial, (Buenos Aires, Argentina) </li>
+            <li>Curso Avanzado en Concepto Bobath “Importancia de la referencia Sensorial en el Paciente Adulto con Disfunción Neurológica” (Córdoba, Argentina)</li>
+            <li>Curso Bioenergía Avanzada (Viña del Mar, Chile)</li>
+            <li>Profesorado de Yoga Integral (Santiago de Chile)</li>
+            <li>Taller PSYCH-K “Reprogramación de Creencias Subconsciente” (Viña del Mar, Chile).</li>
+            <li>Diplomado en Neurociencias “Formación de relatores y consultores” (Santiago, Chile).</li>
+            <li>Curso en Coaching Humanista, “Formación en Psicología Positiva” (Concón, Chile).</li>
+            <li>Diplomado en Herramientas de Coaching en las Organizaciones. (Universidad Católica de Chile).</li>
+            <li>Curso de Introducción al Masaje Thailandés (Concón, Chile).</li>
+            <li>Certificación Internacional de Conferencistas y Formadores Virtual (Santiago, Chile).</li>
+             
+                
+            </section>
+            <div class="col-sm-2">
+              <img style="margin-top: 100%;" src="sobre-mi/tres.png" alt="Una descripción de la imagen" class="img-principal">
+              
+            </div>
+          </div>
+        </details>
+
+        <br>
+        <br>
+        
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-2">
+<section id="sobre-mi" class="content-section"">
+  <h3 class="display-custom nunito" >Mis videos </h3>
+  <div style="display: flex; gap: 10%; justify-content: space-around;margin-left: 15% ;">
+    <div style="flex: 0 0 60%; margin: 30px 0;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/XDTkLWGNBLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div style="flex: 0 0 60%; margin: 30px 0;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/MaeCJLrU-jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- Agrega más videos aquí. -->
+  </div>
+</section>
+</div>
+</div>
+  
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row" style="justify-content: center; margin-left: 7%;">
+        <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+            <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    
+        <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+            <a href="https://twitter.com/tu_nombre_de_usuario/" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </div>
+    
+        <div class="col-lg-2 col-md-4" style="padding-right:20px; padding-left:20px; align-items: center;">
+            <a href="tel:your-phone-number" target="_blank">
+                <i class="fas fa-phone fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    
+    
+    </div>
+    <div class="footer-bottom">
+        <p class="nunito">&copy; 2023 Cathy Alarcón. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  
+  
+
+    
+
+  <!-- <footer class="footer bg-dark text-white p-3 text-center">
+    <p>&copy; 2023 Mi Terapia</p>
+  </footer> -->
+
+  <!-- Referencias a jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- ... el contenido de tu inicio ... -->
+ 
+
+<script>
+  
+
+  $(document).ready(function(){
+    $(".toggle").click(function(){
+      $(this).next(".text").slideToggle("slow");
+    });
+  });
+
+  </script>
+  
+</body>
+
+</html>
